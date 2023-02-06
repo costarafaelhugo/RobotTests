@@ -1,9 +1,14 @@
+*** Settings ***
+Documentation   Essa suite testa o site da Amazon.com.br
+Test Setup      Abrir o navegador
+Test Teardown   Fechar o navegador           
+
 *** Test Cases ***
 Caso de teste 01 - Acesso ao menu "Eletrônicos"
     [Documentation]   Este teste verifica o menu "Eletrônicos" da Amazon.com.br
     ...               E verifica a categoria computadores e informatica      
     [Tags]            menus  categorias
-    Acessar a home page do site amazon.com.br
+    Acessar a home page do site amazon.com.br    
     Entrar no menu "Eletrônicos"
     Verificar se o titulo da página fica "Eletrônicos e Tecnologia | Amazon.com.br"
     Verificar se aparece a frase "Eletrônicos e Tecnologia"
